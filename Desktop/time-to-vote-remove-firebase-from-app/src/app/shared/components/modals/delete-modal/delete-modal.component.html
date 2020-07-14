@@ -1,0 +1,17 @@
+<StackLayout class="delete-modal-container text-center">
+    <StackLayout class="m-t-30">
+        <Label class="title" text="Are you sure?"></Label>
+    </StackLayout>
+    <StackLayout  class="m-t-12">
+        <Label class="body" text="Do you want to delete?" textWrap="true"></Label>
+    </StackLayout>
+    <StackLayout class="m-t-30">
+        <Button text="Yes"
+                class="btn btn-circle btn-primary approve"
+                (tap)="approve()">
+        </Button>
+    </StackLayout>
+    <StackLayout class="m-t-12">
+        <Label text="Discard" (tap)="dismiss()" class="cancel"></Label>
+    </StackLayout>
+</StackLayout>

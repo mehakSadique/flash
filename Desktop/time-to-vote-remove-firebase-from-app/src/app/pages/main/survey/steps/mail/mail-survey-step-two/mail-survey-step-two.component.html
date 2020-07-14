@@ -1,0 +1,55 @@
+<app-nav-bar title='Time to Vote' (openSideBar)="onDrawerNextTap()"></app-nav-bar>
+<StackLayout>
+  <ScrollView height="100%">
+  <FlexboxLayout flexDirection="column" backgroundcolor="#F2F2F2" width="100%">
+    <StackLayout class="p-16" backgroundcolor="#fff">
+      <Label text="Mail Voting Follow Up Survey" class="h2 text-center regular-font" textWrap="true"></Label>
+      <Label text="Page 2 of 3" class="h3 text-center regular-font" textWrap="true"></Label>
+      
+    </StackLayout>
+    <FlexboxLayout class="p-16" flexDirection="column" width="100%">
+      <FlexboxLayout width="100%" flexDirection="column" class="m-b-24">
+        <Label text="How confident are you that your vote was counted as you intended?" color="#212121" class="h3" textWrap="true"></Label>
+        <CardView class="cardStyle" elevation="40" radius="6">
+          <GridLayout rows="*" columns="*,auto" class="p-l-16 p-r-16 p-t-8 p-b-8" height="60"  width="100%">
+            <Label text="SELECT FROM THE FOLLOWING" row="0" col="0" color="#3F3D56" horizontalAlignment="left" verticalAlignment="center" ripple class="medium-font h3" textWrap="true"></Label>
+            <Label text="&#xf0dd;" class="fa h2" row="0" col="1" color="#3F3D56"  horizontalAlignment="right" verticalAlignment="center" ripple textWrap="true"></Label>
+          </GridLayout>
+        </CardView>
+      </FlexboxLayout>
+
+      <FlexboxLayout width="100%" flexDirection="column"  class="m-b-24">
+        <Label text="Overall, how satisfied are you with the job performance of the poll workers at your voting location?" color="#212121" class="h3" textWrap="true"></Label>
+        <CardView class="cardStyle" elevation="40" radius="6">
+          <GridLayout rows="*" columns="*,auto" class="p-l-16 p-r-16 p-t-8 p-b-8" height="60"  width="100%">
+            <Label text="SELECT FROM THE FOLLOWING" row="0" col="0" color="#3F3D56" horizontalAlignment="left" verticalAlignment="center" ripple class="medium-font h3" textWrap="true"></Label>
+            <Label text="&#xf0dd;" class="fa h2" row="0" col="1" color="#3F3D56"  horizontalAlignment="right" verticalAlignment="center" ripple textWrap="true"></Label>
+          </GridLayout>
+        </CardView>
+      </FlexboxLayout>
+
+      <FlexboxLayout width="100%" flexDirection="column"  class="m-b-24">
+        <Label text="Which of the following best describes your opinion of the election?" color="#212121" class="h3" textWrap="true"></Label>
+        <CardView class="cardStyle" elevation="40" radius="6">
+          <GridLayout rows="*" columns="*,auto" class="p-l-16 p-r-16 p-t-8 p-b-8" height="60"  width="100%">
+            <Label text="SELECT FROM THE FOLLOWING" row="0" col="0" color="#3F3D56" horizontalAlignment="left" verticalAlignment="center" ripple class="medium-font h3" textWrap="true"></Label>
+            <Label text="&#xf0dd;" class="fa h2" row="0" col="1" color="#3F3D56"  horizontalAlignment="right" verticalAlignment="center" ripple textWrap="true"></Label>
+          </GridLayout>
+        </CardView>
+      </FlexboxLayout>
+
+      <FlexboxLayout width="100%" flexDirection="column"  class="m-b-24">
+        <Label text="On the whole, how satisfied are you with the way democracy works in the United States?" color="#212121" class="h3" textWrap="true"></Label>
+        <CardView class="cardStyle" elevation="40" radius="6">
+          <GridLayout rows="*" columns="*,auto" class="p-l-16 p-r-16 p-t-8 p-b-8" height="60"  width="100%">
+            <Label text="SELECT FROM THE FOLLOWING" row="0" col="0" color="#3F3D56" horizontalAlignment="left" verticalAlignment="center" ripple class="medium-font h3" textWrap="true"></Label>
+            <Label text="&#xf0dd;" class="fa h2" row="0" col="1" color="#3F3D56"  horizontalAlignment="right" verticalAlignment="center" ripple textWrap="true"></Label>
+          </GridLayout>
+        </CardView>
+      </FlexboxLayout>
+    </FlexboxLayout>
+    <Button text="NEXT" class="-primary -rounded-sm roboto-bold" width="100%"  color="#fff" ripple (tap)="nextSlide()"></Button>
+    <Button text="Back" class="-secondry -rounded-sm roboto-bold" width="100%"  color="#fff" ripple (tap)="back()"></Button>
+  </FlexboxLayout>
+  </ScrollView>
+</StackLayout>

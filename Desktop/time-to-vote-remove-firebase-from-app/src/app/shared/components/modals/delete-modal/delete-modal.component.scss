@@ -1,0 +1,25 @@
+/* Add mobile styles for the component here.  */
+
+.delete-modal-container {
+  border-radius: 5;
+  border-color: white;
+  border-width: 0.5;
+  padding: 28 12 12;
+  margin: 8;
+  .title {
+    color: #454f63;
+    font-size: 18;
+  }
+  .body {
+    font-size: 12;
+    color: #454f63;
+  }
+  .approve {
+    font-size: 12;
+    color: white;
+  }
+  .cancel {
+    color: #f49e4b;
+    font-size: 12;
+  }
+}

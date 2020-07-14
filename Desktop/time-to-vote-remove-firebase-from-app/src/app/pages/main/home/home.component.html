@@ -1,0 +1,47 @@
+<app-nav-bar title='Time to Vote' (openSideBar)="onDrawerNextTap()"></app-nav-bar>
+<StackLayout>
+<ScrollView height="100%">
+  <StackLayout>
+    <CardView class="cardStyle" margin="10" elevation="40" radius="6" ripple (tap)="voteGurad()">
+      <GridLayout rows="auto,auto,auto" columns="auto,auto,auto">
+        <Image src="~/assets/images/card-image.png" row="0" colSpan="3" width="100%" heigth="50"></Image>
+
+        <StackLayout  row="1" colSpan="3" class="p-16">
+            <Label text="Dynamic Voting Guides" class="h2 medium-font" textWrap="true"></Label>
+            <Label text="Voting guides for your state" class="p regular-font" textWrap="true"></Label>
+        </StackLayout>
+
+          <Button text="VIEW" row="2" col="3" width="93"  class="-primary -rounded-sm" horizontalAlignment="right"></Button>
+      </GridLayout>
+       
+    </CardView>
+
+    <CardView class="cardStyle" margin="10" elevation="40" radius="6" ripple (tap)="goToVoting()">
+      <GridLayout rows="auto,auto" columns="auto,auto" class="image">
+        <!-- <Image src="" height="100%" row="0" col="2" horizontalAlignment="right" varticalAlignment="top"  ></Image> -->
+        <StackLayout  row="0" colSpan="2" class="p-16" width="100%">
+            <Label text="Dynamic Voting Guides" class="h2 medium-font" textWrap="true"></Label>
+            <Label [text]="'Time to Survey Your voting time has been \n submitted  please tap here to begin the survey'" class="p regular-font line-height" textWrap="true"></Label>
+        </StackLayout>
+          <Button text="CONTINUE" row="1" col="1" class="-primary -rounded-sm" horizontalAlignment="right" width="93"></Button>
+        
+      </GridLayout>
+       
+    </CardView> 
+
+    <CardView class="cardStyle" margin="10" elevation="40" radius="6" ripple (tap)="gotozipcode()">
+      <FlexboxLayout class="p-16" justifyContent="space-between" width="100%" flexDirection="row">
+        <Label text="Look up a polling center near you"  class="medium-font h3" textWrap="true"></Label>
+        <Label text="&#xf061;" class="fa" fontSize="18" textWrap="true"></Label> 
+      </FlexboxLayout>
+    </CardView> 
+
+    <StackLayout class="p-16">
+      <Label text="Tap here to learn more about the Northeastern University study" (tap)="open('https://docs.nativescript.org/')" class="text-center text-primary  link-primary" fontSize="18"  textWrap="true"></Label>
+    </StackLayout>
+  </StackLayout>
+   
+</ScrollView> 
+
+
+</StackLayout>

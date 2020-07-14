@@ -1,0 +1,173 @@
+/*
+In NativeScript, the app.css file is where you place CSS rules that
+you would like to apply to your entire application. Check out
+http://docs.nativescript.org/ui/styling for a full list of the CSS
+selectors and properties you can use to style UI components.
+
+/*
+In many cases you may want to use the NativeScript core theme instead
+of writing your own CSS rules. You can learn more about the 
+NativeScript core theme at https://github.com/nativescript/theme
+The imported CSS rules must precede all other types of rules.
+*/
+// @import "~nativescript-theme-core/core";
+// @import "~nativescript-theme-core/blue";
+
+// @import "~@nativescript/theme/core";
+// @import "~@nativescript/theme/light";
+/* Place any CSS rules you want to apply on both iOS and Android here.
+This is where the vast majority of your CSS code goes. */
+
+// Custom colors
+$background-dark: #F8F8F8 !default;
+$background-light: #FFFFFF !default;
+
+$blue-dark: #212121 !default;
+$blue-light: #02556E !default;
+$blue-50: rgba($blue-dark, 0.5) !default;
+$blue-20: rgba($blue-dark, 0.2) !default;
+$blue-10: rgba($blue-dark, 0.1) !default;
+
+$accent-dark: #3A53FF !default;
+$accent-light: #4781FE !default;
+
+$success-dark: #06CE6A !default;
+$success-light: #00E676 !default;
+
+$warning-dark: #f39c11 !default;
+$warning-light: #F2C112 !default;
+
+$error-dark: #D84039 !default;
+$error-light: #D8594A !default;
+
+$midnight-dark: #0F336D !default;
+$midnight-light: #14418B !default;
+
+$night-dark: #023141 !default;
+$night-light: #01526C !default;
+
+$page-icon-color: #D7D7D7 !default;
+
+// Sizes
+$page-content-placeholder-font-size: 20;
+
+/**
+ * Theme variables overrides
+**/
+
+// Colors
+$background: #F2F2F2;
+$secondary: #709194;
+$disabled: lighten(#000, 62%);
+$accent: #225378;
+$error: $error-light;
+$warning: #FFFF00;
+// SideDrawer
+$item-color-android: #737373;
+$item-active-background: rgb(238, 55, 55);
+$item-active-color: $accent;
+$item-active-icon-color: $item-active-color;
+$item-color-ios: $blue-dark;
+$item-color-android: $blue-dark;
+
+$side-drawer-header-background: #fafafa;
+$side-drawer-header-brand: #737373;
+$side-drawer-background: #FFFFFF;
+
+// ActionBar
+$ab-background: #63748A;
+$ab-color: #fff;
+
+
+
+  // Buttons
+$btn-color: black;
+$primary: #225378;
+$btn-color: $accent;
+$btn-color-secondary: $secondary;
+$btn-color-outline-highlighted: lighten($btn-color, 10%);
+$border-radius-sm: 4;
+//Text colors
+$headings-color: $blue-dark;
+$text-color: $blue-dark;
+
+.text-danger {
+  color: $warning;  
+}
+
+@import '~@nativescript/theme/index';
+
+/* 
+    File name: fa-solid-900.ttf 
+    Font name: Font Awesome 5 Free
+*/
+
+.fa {
+    font-family: "Font Awesome 5 Free", "fa-brand-900";
+    font-weight: 900;
+}
+
+.fa {
+  font-family: "Font Awesome 5 Free", "fa-solid-900";
+}
+
+
+.h1 {
+  font-size: 46;
+}
+
+.regular-font {
+  font-family: 'Poppins-Regular', Poppins;
+}
+
+.medium-font {
+  font-family: 'Poppins-Medium', Poppins;
+}
+
+.roboto-bold {
+  font-family: 'Roboto-Bold', Roboto;
+}
+  
+  .h2 {
+  font-size: 20;
+  }
+  
+  .h3 {
+  font-size: 16;
+  }
+  
+  .h4 {
+  font-size: 14;
+  }
+  
+  .h5 {
+  font-size: 12;
+  }
+  
+  .h6 {
+  font-size: 12;
+  }
+
+  .body {
+    font-size: 14;
+  }
+
+  .link-primary {
+    color: #225378;
+    text-decoration: underline;
+    font-family: 'Poppins-Medium', Poppins;
+  }
+
+  .text-warning {
+    color: $warning;
+    text-decoration: underline;
+    font-family: 'Poppins-Medium', Poppins;
+  }
+
+  .primary-background {
+    background-color: $ab-background;
+}
+
+.-secondry {
+  background-color: $secondary;
+}

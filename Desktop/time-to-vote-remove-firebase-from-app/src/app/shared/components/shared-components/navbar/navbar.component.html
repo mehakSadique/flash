@@ -1,0 +1,9 @@
+<ActionBar>
+    <NavigationButton *ngIf="isAndroid" ios:visibility="collapsed" icon="font://&#xf0c9;" class="fa" (tap)="onDrawerNextTap()"></NavigationButton>
+    <NavigationButton *ngIf="!isAndroid" ios:visibility="collapsed"></NavigationButton>
+     <ActionItem icon="font://&#xf0c9;" android:visibility="collapsed" class="fa" (tap)="onDrawerNextTap()" position="right"></ActionItem>
+    <Label class="action-bar-title" [text]="title"></Label>
+</ActionBar>
+
+
+

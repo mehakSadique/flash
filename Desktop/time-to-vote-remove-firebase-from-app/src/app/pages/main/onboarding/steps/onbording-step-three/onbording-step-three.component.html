@@ -1,0 +1,14 @@
+<FlexboxLayout  flexDirection="column" justifyContent="space-between" height="100%">
+    <AbsoluteLayout height="80%">
+       <StackLayout width="100%" class="primary-background p-24"  paddingTop="50" height="380">
+           <Label class="regular-font h2 white" color="#F2F2F2"  [text]="'Use ‘Time to Vote’ to help us accurately measure which polling stations have long wait times, and which do not.'" textWrap="true"></Label>
+           <Label text="Learn more about the study with Northeastern University" class="h2 text-warning  link-primary" textWrap="true"></Label>
+        </StackLayout>
+       <StackLayout width="100%" ios:top="240" android:top="230" class="p-24">
+           <Image src="~/assets/images/ballot.png" width="100%"  stretch="aspectFill"></Image> 
+       </StackLayout>
+    </AbsoluteLayout>
+    <StackLayout class="p-t-16">
+       <Button text="NEXT" class="-primary -rounded-sm roboto-bold" color="#fff" (tap)="home()"></Button>
+    </StackLayout>
+   </FlexboxLayout>

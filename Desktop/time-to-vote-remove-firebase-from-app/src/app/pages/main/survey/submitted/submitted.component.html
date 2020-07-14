@@ -1,0 +1,16 @@
+<FlexboxLayout  flexDirection="column" height="100%">
+    <AbsoluteLayout height="80%">
+       <StackLayout width="100%" class="primary-background p-24" paddingTop="50" height="400">
+           <Label class="regular-font h2 white" color="#F2F2F2"  [text]="'Thank you for using ‘Time to Vote’ to help us measure differences in wait times across North Carolina and “other state”.'" textWrap="true"></Label>
+       </StackLayout>
+
+       <StackLayout width="100%" ios:top="210" android:top="210" class="p-d-24">
+           <Image src="~/assets/images/note-pad.png" width="80%"  stretch="aspectFill"></Image> 
+       </StackLayout>
+       
+    </AbsoluteLayout>
+    <StackLayout class="p-t-16">
+       <Button text="SEE THE RESULTS HERE" class="-primary -rounded-sm roboto-bold" color="#fff" ripple (tap)="goHome()"></Button>
+       <Button text="BACK TO HOME" class="-secondry -rounded-sm roboto-bold" color="#fff" ripple (tap)="goHome()"></Button>
+    </StackLayout>
+   </FlexboxLayout>

@@ -1,0 +1,23 @@
+<RadSideDrawer [drawerTransition]="sideDrawerTransition" (loaded)="setDrawer($event)" class="sidebar">
+  <GridLayout rows="auto, *" height="100%" tkDrawerContent class="sidedrawer layout">
+    <StackLayout backgroundColor="white" class="drawer-content" row="1">
+      <StackLayout>
+        <StackLayout height="90%">
+          <StackLayout *ngFor="let menu of menuItems">
+            <FlexboxLayout height="60" width="100%" flexDirection="row" *ngFor="let item of menu" ripple
+              (tap)="onNavItemTap(item)" paddingTop="16" class="menu-row-one-item">
+              <StackLayout flexGrow="1" horizontalAlignment="center" verticalAlignment="middle" width="42">
+                <!-- <Label [text]="parseIcon(item)" fontSize="26"
+                  class="ripple icon text-right menu-item-icon-one-item fal"></Label> -->
+              </StackLayout>
+              <StackLayout flexGrow="2" width="82%">
+                <Label class="text-menu icon-list menu-item" [text]="item.name"></Label>
+              </StackLayout>
+            </FlexboxLayout>
+          </StackLayout>
+        </StackLayout>
+      </StackLayout>
+    </StackLayout>
+  </GridLayout>
+      <page-router-outlet tkMainContent class="page page-content"></page-router-outlet>
+</RadSideDrawer>

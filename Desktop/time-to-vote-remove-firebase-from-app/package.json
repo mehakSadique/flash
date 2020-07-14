@@ -1,0 +1,54 @@
+{
+  "nativescript": {
+    "id": "org.nativescript.timetovote",
+    "tns-ios": {
+      "version": "6.4.0"
+    },
+    "tns-android": {
+      "version": "6.5.1"
+    }
+  },
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "repository": "<fill-your-repository-here>",
+  "dependencies": {
+    "@angular/animations": "~8.2.0",
+    "@angular/common": "~8.2.0",
+    "@angular/compiler": "~8.2.0",
+    "@angular/core": "~8.2.0",
+    "@angular/forms": "~8.2.0",
+    "@angular/platform-browser": "~8.2.0",
+    "@angular/platform-browser-dynamic": "~8.2.0",
+    "@angular/router": "~8.2.0",
+    "@nativescript/theme": "^2.3.3",
+    "@nstudio/nativescript-cardview": "^1.0.0",
+    "@nstudio/nativescript-checkbox": "^1.0.0",
+    "axios": "^0.19.2",
+    "change-case": "^4.1.1",
+    "firebase-functions": "^3.8.0",
+    "gaxios": "^3.0.3",
+    "nativescript-angular": "~8.21.0",
+    "nativescript-fontawesome": "^1.0.0",
+    "nativescript-geolocation": "^5.1.0",
+    "nativescript-ng-ripple": "^2.0.1",
+    "nativescript-ui-listview": "^8.2.0",
+    "nativescript-ui-sidedrawer": "^8.0.1",
+    "nativescript-web-image-cache": "^5.0.0",
+    "ngx-pipes": "^2.7.3",
+    "reflect-metadata": "~0.1.12",
+    "request": "^2.88.2",
+    "rxjs": "^6.4.0",
+    "snake-case": "^3.0.3",
+    "tns-core-modules": "~6.4.0",
+    "zone.js": "~0.9.1"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "~8.2.0",
+    "@ngtools/webpack": "~8.2.0",
+    "nativescript-dev-webpack": "~1.5.0",
+    "node-sass": "^4.14.1",
+    "typescript": "~3.5.3"
+  },
+  "gitHead": "d8bdf0799a219051f28f8abd7c258d2bf2fce6e1",
+  "readme": "NativeScript Application"
+}

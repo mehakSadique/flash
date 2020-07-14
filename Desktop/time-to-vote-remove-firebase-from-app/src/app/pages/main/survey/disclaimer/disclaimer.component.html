@@ -1,0 +1,11 @@
+<app-nav-bar title='Time to Vote' (openSideBar)="onDrawerNextTap()"></app-nav-bar>
+<FlexboxLayout flexDirection="column">
+    <StackLayout backgroundColor="#fff" class="p-16" height="50%">
+     <Label text="Disclaimer" textWrap="true" class="h2"></Label>
+     <Label class="h3 m-t-16 regular-font" text="Thank you for participating in our study. We’d like to follow up with a quick survey to gather more details about your voting experience. Answers and data will be kept anonymous and will be used to invoke your rights as a U.S. citizen." textWrap="true"></Label>
+    </StackLayout>
+    <FlexboxLayout flexDirection="column"  height="48%" class="p-16" justifyContent="flex-end">
+        <Button text="BEGIN SURVEY" class="-primary -rounded-sm roboto-bold" width="100%"  color="#fff" ripple (tap)="nextSlide()"></Button>
+        <Button text="SAVE FOR LATER" class="-secondry -rounded-sm roboto-bold" width="100%"  color="#fff" ripple (tap)="nextSlide()"></Button>
+    </FlexboxLayout>
+</FlexboxLayout>

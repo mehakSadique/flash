@@ -1,0 +1,19 @@
+<StackLayout>
+    <ScrollView>
+        <StackLayout>
+            <StackLayout class="p-15">
+                <Label [text]="optionQuestion" textWrap="true" class="h3"></Label>
+            </StackLayout>
+            
+            <GridLayout class="p-15" rows="auto" columns="auto,*" *ngFor="let item of radioOptions" ripple (tap)="changeCheckedRadio(item)">
+                <StackLayout row="0" col="0" class="checkbox">
+                    <Label text="."  class="select-indicator" *ngIf="item.value == selectedValue" textWrap="true"></Label>
+                </StackLayout>
+                <Label col="1" row="0" [text]="item.name" class="m-l-10" fontSize="20" textWrap="true"></Label>
+            </GridLayout>
+
+        </StackLayout>
+    </ScrollView>
+</StackLayout>
+
+

@@ -1,0 +1,65 @@
+<app-nav-bar title='Time to Vote' (openSideBar)="onDrawerNextTap()"></app-nav-bar>
+<StackLayout>
+  <ScrollView height="100%">
+  <FlexboxLayout flexDirection="column" backgroundcolor="#F2F2F2" width="100%">
+    <StackLayout class="p-16" backgroundcolor="#fff">
+      <Label text="In Person Voting Follow Up Survey" class="h2 text-center regular-font" textWrap="true"></Label>
+      <Label text="Page 1 of 3" class="h3 text-center regular-font" textWrap="true"></Label>
+      
+    </StackLayout>
+    <FlexboxLayout class="p-16" flexDirection="column" width="100%">
+      <FlexboxLayout width="100%" flexDirection="column" class="m-b-24">
+        <Label text="Were you asked to provide a photo ID when you voted?" color="#212121" class="h3" textWrap="true"></Label>
+        <CardView class="cardStyle" elevation="40" radius="6">
+          <GridLayout rows="*" columns="*,auto" class="p-l-16 p-r-16 p-t-8 p-b-8" height="60"  width="100%">
+            <Label text="SELECT FROM THE FOLLOWING" row="0" col="0" color="#3F3D56" horizontalAlignment="left" verticalAlignment="center" ripple class="medium-font h3" textWrap="true"></Label>
+            <Label text="&#xf0dd;" class="fa h2" row="0" col="1" color="#3F3D56"  horizontalAlignment="right" verticalAlignment="center" ripple textWrap="true"></Label>
+          </GridLayout>
+        </CardView>
+      </FlexboxLayout>
+
+      <FlexboxLayout width="100%" flexDirection="column"  class="m-b-24">
+        <Label text="Did you witness others give up and leave the voting line before voting?" color="#212121" class="h3" textWrap="true"></Label>
+        <CardView class="cardStyle" elevation="40" radius="6">
+          <GridLayout rows="*" columns="*,auto" class="p-l-16 p-r-16 p-t-8 p-b-8" height="60"  width="100%">
+            <Label text="SELECT FROM THE FOLLOWING" row="0" col="0" color="#3F3D56" horizontalAlignment="left" verticalAlignment="center" ripple class="medium-font h3" textWrap="true"></Label>
+            <Label text="&#xf0dd;" class="fa h2" row="0" col="1" color="#3F3D56"  horizontalAlignment="right" verticalAlignment="center" ripple textWrap="true"></Label>
+          </GridLayout>
+        </CardView>
+      </FlexboxLayout>
+
+      <FlexboxLayout width="100%" flexDirection="column"  class="m-b-24">
+        <Label text="On an scale of 1 (easiest) - 5 (most difficult), how easy was it for you to obtain transportation to the polling site?" color="#212121" class="h3" textWrap="true"></Label>
+        <CardView class="cardStyle" elevation="40" radius="6">
+          <GridLayout rows="*" columns="*,auto" class="p-l-16 p-r-16 p-t-8 p-b-8" height="60"  width="100%">
+            <Label text="SELECT FROM THE FOLLOWING" row="0" col="0" color="#3F3D56" horizontalAlignment="left" verticalAlignment="center" ripple class="medium-font h3" textWrap="true"></Label>
+            <Label text="&#xf0dd;" class="fa h2" row="0" col="1" color="#3F3D56"  horizontalAlignment="right" verticalAlignment="center" ripple textWrap="true"></Label>
+          </GridLayout>
+        </CardView>
+      </FlexboxLayout>
+
+      <FlexboxLayout width="100%" flexDirection="column"  class="m-b-24">
+        <Label text="On a scale of 1 - 10, how efficiently did the voting machines operate?" color="#212121" class="h3" textWrap="true"></Label>
+        <CardView class="cardStyle" elevation="40" radius="6">
+          <GridLayout rows="*" columns="*,auto" class="p-l-16 p-r-16 p-t-8 p-b-8" height="60"  width="100%">
+            <Label text="SELECT FROM THE FOLLOWING" row="0" col="0" color="#3F3D56" horizontalAlignment="left" verticalAlignment="center" ripple class="medium-font h3" textWrap="true"></Label>
+            <Label text="&#xf0dd;" class="fa h2" row="0" col="1" color="#3F3D56"  horizontalAlignment="right" verticalAlignment="center" ripple textWrap="true"></Label>
+          </GridLayout>
+        </CardView>
+      </FlexboxLayout>
+
+      <FlexboxLayout width="100%" flexDirection="column"  class="m-b-24">
+        <Label text="Did you observe or experience any problems with the voting machines at your location?" color="#212121" class="h3" textWrap="true"></Label>
+        <CardView class="cardStyle" elevation="40" radius="6">
+          <GridLayout rows="*" columns="*,auto" class="p-l-16 p-r-16 p-t-8 p-b-8" height="60"  width="100%">
+            <Label text="SELECT FROM THE FOLLOWING" row="0" col="0" color="#3F3D56" horizontalAlignment="left" verticalAlignment="center" ripple class="medium-font h3" textWrap="true"></Label>
+            <Label text="&#xf0dd;" class="fa h2" row="0" col="1" color="#3F3D56"  horizontalAlignment="right" verticalAlignment="center" ripple textWrap="true"></Label>
+          </GridLayout>
+        </CardView>
+      </FlexboxLayout>
+    </FlexboxLayout>
+    <Button text="NEXT" class="-primary -rounded-sm roboto-bold" width="100%"  color="#fff" ripple (tap)="nextSlide()"></Button>
+    <Button text="Back" class="-secondry -rounded-sm roboto-bold" width="100%"  color="#fff" ripple (tap)="back()"></Button>
+  </FlexboxLayout>
+  </ScrollView>
+</StackLayout>

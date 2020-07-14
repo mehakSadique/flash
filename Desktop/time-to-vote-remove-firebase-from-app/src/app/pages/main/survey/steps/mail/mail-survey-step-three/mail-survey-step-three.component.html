@@ -1,0 +1,25 @@
+<app-nav-bar title='Time to Vote' (openSideBar)="onDrawerNextTap()"></app-nav-bar>
+<StackLayout>
+  <ScrollView height="100%">
+    <FlexboxLayout flexDirection="column"  justifyContent="space-between" backgroundColor="#F2F2F2" width="100%">
+      <StackLayout>
+        <StackLayout class="p-16" backgroundColor="#fff">
+          <Label text="Mail Voting Follow Up Survey" class="h2 text-center regular-font" textWrap="true"></Label>
+          <Label text="Page 3 of 3" class="h3 text-center regular-font" textWrap="true"></Label>
+        </StackLayout>
+        <FlexboxLayout class="m-t-20" flexDirection="column" clas width="100%">
+          <TextView borderColor="#5E6C84" padding="10" backgroundColor="#fff" borderRadius="6" borderWidth="1" width="100"
+            height="335" hint="Please type any additional comments you would like to add (optional)"
+            returnKeyType="send"  class="input input-border"></TextView>
+        </FlexboxLayout>
+      </StackLayout>
+
+      <FlexboxLayout flexDirection="column">
+        <Button text="SUBMIT" class="-primary -rounded-sm roboto-bold" width="100%" color="#fff" ripple
+          (tap)="nextSlide()"></Button>
+        <Button text="BACK" class="-secondry -rounded-sm roboto-bold" width="100%" color="#fff" ripple
+          (tap)="back()"></Button>
+      </FlexboxLayout>
+    </FlexboxLayout>
+  </ScrollView>
+</StackLayout>

@@ -1,0 +1,22 @@
+<app-nav-bar title='Time to Vote' (openSideBar)="onDrawerNextTap()"></app-nav-bar>
+<FlexboxLayout flexDirection="column">
+    <Label text="How did you vote today?" class="text-center h2" textWrap="true"></Label>
+
+    <FlexboxLayout flexDirection="column" height="60%" class="p-16">
+        <CardView class="cardStyle m-b-24" elevation="40" radius="6" (tap)="openInPerson()" ripple>
+            <GridLayout rows="auto,auto" columns="auto,*" class="p-l-16 p-r-16 p-t-8 p-b-8"  width="100%">
+                <Label text="In Person" row="0" col="0" color="#225378" horizontalAlignment="left"
+                      class="medium-font h2" textWrap="true"></Label>
+                      <Image src="~/assets/images/vote-house.png" row="1" col="1" stretch="aspectFit"></Image> 
+            </GridLayout>
+        </CardView>
+
+        <CardView class="cardStyle" elevation="40" radius="6" ripple (tap)="openInMail()">
+          <GridLayout rows="auto,auto" columns="auto,*" class="p-l-16 p-r-16 p-t-8 p-b-8"  width="100%">
+              <Label text="Mail in" row="0" col="0" color="#225378" horizontalAlignment="left"
+                    class="medium-font h2" textWrap="true"></Label>
+                    <Image src="~/assets/images/news-letter-box.png" row="1" col="1" stretch="aspectFit"></Image> 
+          </GridLayout>
+      </CardView>
+    </FlexboxLayout>
+</FlexboxLayout>

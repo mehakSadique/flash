@@ -1,0 +1,13 @@
+<FlexboxLayout  flexDirection="column" justifyContent="space-between" height="100%">
+ <AbsoluteLayout height="80%">
+    <StackLayout width="100%" class="primary-background p-24" paddingTop="50" height="400">
+        <Label class="regular-font h2 white" color="#F2F2F2"  [text]="'Many voters experience long\nlines and long wait times. Some\npeople even leave before\ncasting their ballot because the line is so long.'" textWrap="true"></Label>
+    </StackLayout>
+    <StackLayout width="100%" ios:top="200" android:top="180">
+        <Image src="~/assets/images/queue.png" width="100%"  stretch="aspectFill"></Image> 
+    </StackLayout>
+ </AbsoluteLayout>
+ <StackLayout class="p-t-16">
+    <Button text="NEXT" class="-primary -rounded-sm roboto-bold" color="#fff" ripple (tap)="nextSlide()"></Button>
+ </StackLayout>
+</FlexboxLayout>

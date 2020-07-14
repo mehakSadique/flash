@@ -1,0 +1,9 @@
+<FlexboxLayout width="100%" flexDirection="column"  class="m-b-24" >
+    <Label [text]="label" color="#212121" class="h3" textWrap="true"></Label>
+    <CardView class="cardStyle" elevation="40" radius="6" ripple (tap)="clickSelect()">
+      <GridLayout rows="*" columns="*,auto" class="p-l-16 p-r-16 p-t-8 p-b-8" height="60"  width="100%">
+        <Label [text]="placeholder" row="0" col="0" color="#3F3D56" horizontalAlignment="left" verticalAlignment="center"  class="medium-font h3" textWrap="true"></Label>
+        <Label text="&#xf0dd;" class="fa h2" row="0" col="1" color="#3F3D56"  horizontalAlignment="right" verticalAlignment="center"  textWrap="true"></Label>
+      </GridLayout>
+    </CardView>
+  </FlexboxLayout>

@@ -1,0 +1,42 @@
+<app-nav-bar title='Time to Vote' (openSideBar)="onDrawerNextTap()"></app-nav-bar>
+<StackLayout>
+  <ScrollView height="100%">
+  <FlexboxLayout flexDirection="column" backgroundColor="#F2F2F2" width="100%">
+    <StackLayout class="p-16" backgroundColor="#fff">
+      <Label text="Please enter your demographic information." class="h2 regular-font" textWrap="true"></Label>
+    </StackLayout>
+    <FlexboxLayout class="p-16" flexDirection="column" width="100%">
+      
+      <select-component placeholder="SELECT FROM THE FOLLOWING" (valueChange)="demographicFormParams.party = $event.value" 
+      optionQuestion="Do you usually think of yourself as a Democrat, a Republican, an Independent, or something else?" label="Do you usually think of yourself as a Democrat, a Republican, an Independent, or something else?" 
+      [selectedOption]="demographicFormParams.indpendent" [options]="[{name: 'Democrat', value: 'Democrat' }, {name: 'Republican', value: 'Republican'}, {name: 'Independent', value: 'Independent'}, {name: 'Other', value: 'Other'}]"></select-component>
+     
+  
+      <select-component placeholder="SELECT FROM THE FOLLOWING" (valueChange)="demographicFormParams.gender = $event.value" 
+      optionQuestion="What is your gender?" label="What is your gender?" [selectedOption]="demographicFormParams.gender" 
+      [options]="[{name: 'Male', value: 'male'}, {name: 'Female', value: 'female'}, {name: 'Other', value: 'Other'}]"></select-component>
+
+      <select-component placeholder="SELECT FROM THE FOLLOWING" (valueChange)="demographicFormParams.race = $event.value" 
+      optionQuestion="What race or ethnicity best describes you?" label="What race of ethnicity best describes you?" [selectedOption]="demographicFormParams.race" 
+      [options]="[{name: 'Caucasian/White', value: 'white'}, {name: 'Black/African-American', value: 'black'}, {name: 'Hispanic/Latinx', value: 'Hispanic/Latinx'},
+      {name: 'Asian/Pacific Islander', value: 'Asian/Pacific Islander'}, {name: 'Native American', value: 'NAtive American'}, {name: 'Other', value: 'Other'}]"></select-component>
+
+    
+      <select-component placeholder="SELECT FROM THE FOLLOWING" (valueChange)="demographicFormParams.year = $event.value" 
+      optionQuestion="In what year were you born?" label="In what year were you born?" [selectedOption]="demographicFormParams.year" 
+      [options]="[{name: '2003', value: 2003}, {name: '2004', value: 2004}, {name: '2005', value: 2005}]"></select-component>
+      
+
+
+      <select-component placeholder="SELECT FROM THE FOLLOWING" (valueChange)="demographicFormParams.school = $event.value" 
+      optionQuestion="What is the highest level of education you completed?" label="What is the highest level of education you completed?" [selectedOption]="demographicFormParams.school" 
+      [options]="[{name: 'Less than high school', value: 'Less than high school'}, {name: 'High school/equivalency degree', value: 'High school/equivalency degree'}, 
+      {name: 'Some college', value: 'Some college'}, {name: 'Undergraduate Degree', value: 'Undergraduate Degree'}, {name: 'Masters Degree', value: 'Masters Degree'},
+      {name: 'Doctorate/Professional Degree', value: 'Doctorate/Professional Degree'}]"></select-component>
+
+    </FlexboxLayout>
+    <Button text="NEXT" class="-primary -rounded-sm roboto-bold" width="100%"  color="#fff" ripple (tap)="save()"></Button>
+  </FlexboxLayout>
+  </ScrollView>
+</StackLayout>
+

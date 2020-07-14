@@ -1,0 +1,15 @@
+.checkbox {
+    border-width: 2;
+    border-color: #747474;
+    width: 20;
+    height: 20;
+    border-radius: 100%;
+}
+
+.select-indicator {
+   width: 10;
+   height: 10;
+   border-radius: 100%;
+   background-color: #63748A;
+   margin-top: 3;
+}

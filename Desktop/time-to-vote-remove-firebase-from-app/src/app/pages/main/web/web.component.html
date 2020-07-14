@@ -1,0 +1,12 @@
+
+
+<ActionBar>
+  <NavigationButton *ngIf="isAndroid" ios:visibility="collapsed" icon="font://&#xf00d;" class="fa" (tap)="close()"></NavigationButton>
+  <NavigationButton *ngIf="!isAndroid" ios:visibility="collapsed"></NavigationButton>
+   <ActionItem icon="font://&#xf00d;" android:visibility="collapsed" class="fa" (tap)="close()" position="right"></ActionItem>
+  <Label class="action-bar-title" text="Time to Vote"></Label>
+</ActionBar>
+
+<GridLayout rows="*">
+  <WebView  [src]="webViewSrc" ></WebView>
+</GridLayout>

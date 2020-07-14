@@ -1,0 +1,26 @@
+<ActionBar>
+  <NavigationButton *ngIf="isAndroid" ios:visibility="collapsed" icon="font://&#xf00d;" class="fa" (tap)="close()"></NavigationButton>
+  <NavigationButton *ngIf="!isAndroid" ios:visibility="collapsed"></NavigationButton>
+   <ActionItem icon="font://&#xf00d;" android:visibility="collapsed" class="fa" (tap)="close()" position="right"></ActionItem>
+  <Label class="action-bar-title" text="Time to Vote"></Label>
+</ActionBar>
+
+
+<FlexboxLayout  flexDirection="column" height="100%">
+  <FlexboxLayout height="50%" flexDirection="column" backgroundColor="#63748A" class="p-16" height="50%" justifyContent="space-between">
+    <Label text="To look up a Polling Center near you, please enter your Zipcode" class="h2 text-left" color="#F2F2F2" textWrap="true"></Label>
+    <StackLayout paddingRight="40" paddingLeft="40" >
+      <TextField hint="0000" class="h1 text-center" keyboardType="number" (returnPress)="onReturnPress($event)" returnKeyType="done" style="placeholder-color:#F2F2F2;"  color="#F2F2F2" borderBottomColor="#F2F2F2"  text=""></TextField>
+    </StackLayout>
+    
+  </FlexboxLayout>
+  <FlexboxLayout height="50%" flexDirection="column" justifyContent="flex-end"  class="p-16" >
+    <Button text="Look Up My Polling Center" class="-primary -rounded-sm roboto-bold" ios:marginBottom="30" color="#fff" ripple (tap)="open('https://docs.nativescript.org/')" ></Button> 
+  </FlexboxLayout>
+ </FlexboxLayout>
+
+
+
+
+
+ 

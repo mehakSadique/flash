@@ -1,0 +1,39 @@
+<app-nav-bar title='Time to Vote' (openSideBar)="onDrawerNextTap()"></app-nav-bar>
+
+    <FlexboxLayout flexDirection="column"  justifyContent="space-between" backgroundColor="#F2F2F2" width="100%">
+      <StackLayout class="p-16" height="70%">
+            <CardView class="cardStyle p-t-20 p-b-20" elevation="40" radius="6">
+                <StackLayout  class="p-t-30 p-b-30">
+                    <Label [text]="transform(time)" class="timer regular-font" verticalAlignment="center"  horizontalAlignment="center"  color="#fff" textWrap="true"></Label>
+                </StackLayout>
+            </CardView>
+
+        <GridLayout rows="auto" columns="auto,*,auto">
+            <Button text="Reset" row="0" col="0" class="-primary -rounded-sm roboto-bold" verticalAlignment="center"  color="#fff" ripple (tap)="reset()"></Button>
+          <GridLayout row="0" col="1" class="m-t-20" height="80" width="80" orientation="vertical" borderRadius="100" backgroundColor="#709194" (tap)="startTimer()">
+              <Label text="&#xf04b;" fontSize="30"  verticalAlignment="center" horizontalAlignment="center" color="#fff" class="fa text-center"textWrap="true"(tap)="startTimer()"></Label>
+          </GridLayout>
+
+          <Button text="Save" row="0" col="2" class="-primary -rounded-sm roboto-bold" verticalAlignment="center" color="#fff" ripple
+          (tap)="saveTime()"></Button>
+        </GridLayout>
+        <!-- Button text="Pause" row="5" col="1" class="-primary -rounded-sm roboto-bold" horizontalAlignment="center" color="#fff" ripple
+          (tap)="pauseTimer()" margintop="30"></Button -->
+      </StackLayout>
+
+
+      <StackLayout class="p-16">
+
+        <CardView class="white-card  m-b-20" elevation="0"  radius="6" ripple (tap)="finish()">
+            <GridLayout rows="auto,auto" columns="auto,*,auto" height="106" class="p-l-16 p-r-16 p-t-8 p-b-8"  width="100%">
+                <Label text="I voted by mail" row="0" col="0" color="#225378" verticalAlignment="top" horizontalAlignment="left"
+                      class="medium-font h2" textWrap="true"></Label>
+                <Image src="~/assets/images/mail.png" row="0" col="1" height="80%" stretch="aspectFit"></Image>
+                <Label text="&#xf061;" rowSpan="2" col="2" verticalAlignment="bottom" class="fa" fontSize="18" ripple textWrap="true"></Label>
+            </GridLayout>
+        </CardView>
+        <Button text="BACK" class="-primary -rounded-sm roboto-bold" width="100%" color="#fff" ripple
+          (tap)="back()"></Button>
+      </StackLayout>
+
+    </FlexboxLayout>

@@ -1,0 +1,15 @@
+<FlexboxLayout  flexDirection="column" justifyContent="space-between" height="100%">
+    <AbsoluteLayout height="80%">
+       <StackLayout width="100%" class="primary-background p-24"  paddingTop="50" height="350">
+           <Label class="regular-font h2 white" color="#F2F2F2"  [text]="'Voting can be difficult when\nthere are long wait times. But not all communities experience long lines. This leads to unequal\naccess to voting.'" textWrap="true"></Label>
+       </StackLayout>
+       <StackLayout width="100%" ios:top="240" android:top="230" class="p-24">
+           <Image src="~/assets/images/work-time.png" width="100%"  stretch="aspectFill"></Image> 
+       </StackLayout>
+    </AbsoluteLayout>
+    <StackLayout class="p-t-16">
+       <Button text="NEXT" class="-primary -rounded-sm roboto-bold" color="#fff" ripple (tap)="nextSlide()"></Button>
+    </StackLayout>
+   </FlexboxLayout>
+
+   

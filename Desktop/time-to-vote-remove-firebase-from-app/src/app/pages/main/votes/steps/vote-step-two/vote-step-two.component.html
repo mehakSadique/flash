@@ -1,0 +1,14 @@
+<FlexboxLayout  flexDirection="column" justifyContent="space-between" height="100%">
+    <AbsoluteLayout height="80%">
+       <StackLayout width="100%" class="primary-background p-24"  paddingTop="50" height="380">
+           <Label class="regular-font h2 white" color="#F2F2F2"  [text]="'After you leave the polling station, press “ . “ You’ll be asked three questions you can answer now or later.'" textWrap="true"></Label>
+        </StackLayout>
+       <StackLayout width="100%" ios:top="210" android:top="230" class="p-24">
+           <Image src="~/assets/images/app-loader.png" width="40%"  stretch="aspectFill"></Image> 
+       </StackLayout>
+    </AbsoluteLayout>
+    <StackLayout class="p-t-16">
+       <Button text="NEXT" class="-primary -rounded-sm roboto-bold" color="#fff" (tap)="nextSlide()"></Button>
+       <Button text="BACK TO HOME" class="-secondry -rounded-sm roboto-bold" color="#fff" (tap)="back()"></Button>
+    </StackLayout>
+   </FlexboxLayout>
